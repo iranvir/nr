@@ -1,0 +1,68 @@
+site_name: Numbers and Reality
+site_url: https://www.numbersandreality.com
+
+theme:
+  name: material
+  palette:
+  - scheme: default
+    toggle:
+      icon: material/brightness-5
+      name: Switch to dark mode
+  - scheme: slate
+    toggle:
+      icon: material/brightness-3
+      name: Switch to light mode
+  features:
+  - navigation.expand
+  - navigation.instant
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.tracking
+  - navigation.footer
+  # font:
+  #   text: Merriweather
+  #   code: Fira Mono
+
+plugins:
+- search
+- section-index
+
+extra:
+  social:
+  - icon: fontawesome/brands/linkedin
+    link: https://www.linkedin.com/in/iranvir/
+  - icon: fontawesome/brands/youtube
+    link: https://www.youtube.com/channel/UCKqk0PA_H85Ie8OgikAAdKA
+  - icon: fontawesome/brands/x-twitter
+    link: https://x.com/numandreality  
+  - icon: fontawesome/brands/github
+    link: https://github.com/iranvir
+
+markdown_extensions:
+- attr_list
+- md_in_html
+- toc:
+    baselevel: 1
+    permalink: "#"
+- pymdownx.arithmatex:
+    generic: true
+- pymdownx.tabbed:
+    slugify: !!python/object/apply:pymdownx.slugs.slugify
+      kwds:
+        case: lower
+- pymdownx.superfences
+
+extra_css:
+- main.css
+
+extra_javascript:
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Computers:
+    - Computers Home: 
+      - computers/index.md
+      - QEMU:
+        - computers/qemu/index.md
