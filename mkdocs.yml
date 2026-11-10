@@ -19,9 +19,9 @@ theme:
   - navigation.tabs.sticky
   - navigation.tracking
   - navigation.footer
-  # font:
-  #   text: Merriweather
-  #   code: Fira Mono
+  font:
+    text: Merriweather
+    code: Fira Mono
 
 plugins:
 - search
@@ -34,7 +34,7 @@ extra:
   - icon: fontawesome/brands/youtube
     link: https://www.youtube.com/channel/UCKqk0PA_H85Ie8OgikAAdKA
   - icon: fontawesome/brands/x-twitter
-    link: https://x.com/numandreality  
+    link: https://x.com/numbersreality
   - icon: fontawesome/brands/github
     link: https://github.com/iranvir
 
@@ -61,6 +61,13 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - About: about.md
+  - Physics:
+    - Physics Home:
+      - physics/index.md
+  - Mathematics:
+    - Mathematics Home:
+      - mathematics/index.md
   - Computers:
     - Computers Home: 
       - computers/index.md
