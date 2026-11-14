@@ -1,0 +1,27 @@
+Rule 1 — ranvir.tech zone
+Redirects both ranvir.tech and www.ranvir.tech → www.numbersandreality.com
+
+Open Redirect Rules for ranvir.tech
+Click Create rule
+Fill in:
+Rule name: Redirect to www.numbersandreality.com
+When incoming requests match: Wildcard pattern
+Request URL: http*://*ranvir.tech/*
+Then → Target URL: https://www.numbersandreality.com/${2}
+Status code: 301
+Preserve query string: ✅ Enabled
+Click Deploy
+
+Rule 2 — numbersandreality.com zone
+Redirects only the apex numbersandreality.com → www.numbersandreality.com (leaves www.numbersandreality.com untouched)
+
+Open Redirect Rules for numbersandreality.com
+Click Create rule
+Fill in:
+Rule name: Redirect apex to www
+When incoming requests match: Wildcard pattern
+Request URL: http*://numbersandreality.com/*
+Then → Target URL: https://www.numbersandreality.com/${2}
+Status code: 301
+Preserve query string: ✅ Enabled
+Click Deploy
