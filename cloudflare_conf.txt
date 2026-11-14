@@ -1,3 +1,5 @@
+Rules --> Redirect Rules (Type URI Full)
+
 Rule 1 — ranvir.tech zone
 Redirects both ranvir.tech and www.ranvir.tech → www.numbersandreality.com
 
